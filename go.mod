@@ -2,14 +2,19 @@ module github.com/NuZard84/go_microservices
 
 go 1.23.8
 
+toolchain go1.23.9
+
 require (
 	github.com/99designs/gqlgen v0.17.72
 	github.com/tinrab/retry v1.0.0
 	github.com/vektah/gqlparser/v2 v2.5.25
 	google.golang.org/protobuf v1.36.6
+	gopkg.in/olivere/elastic.v5 v5.0.86
 )
 
 require (
+	github.com/mailru/easyjson v0.7.1 // indirect
+	github.com/pkg/errors v0.9.1 // indirect
 	golang.org/x/net v0.40.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect
 	golang.org/x/text v0.25.0 // indirect

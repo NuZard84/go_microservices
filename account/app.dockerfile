@@ -1,4 +1,4 @@
-FROM golang:1.20-alpine3.11 AS build
+FROM golang:1.23.8-alpine3.18 AS build
 
 RUN apk --no-cache add gcc g++ make ca-certificates
 
@@ -12,7 +12,7 @@ COPY account account
 
 RUN GO111MODULE=on go build -mod vendor -o /go/bin/app ./account/cmd/account
 
-FROM alpine:3.11
+FROM alpine:3.18
 
 WORKDIR /usr/bin
 

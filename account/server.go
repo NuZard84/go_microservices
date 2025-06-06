@@ -1,4 +1,4 @@
-// protoc --go_out=./pb --go-grpc_out=./pb account.proto
+// protoc --go_out=./proto --go-grpc_out=./proto account.proto
 package account
 
 import (

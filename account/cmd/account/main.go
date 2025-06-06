@@ -22,7 +22,7 @@ func main() {
 	}
 
 	var r account.Repository
-	retry.ForeverSleep(time.Second*10, func(attempt int) error {
+	retry.ForeverSleep(time.Second*2, func(attempt int) error {
 		var err error
 		r, err = account.NewPostgresRepository(cfg.DatabaseURL)
 		if err != nil {
